@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1 class="m-3">Currency Exchange Program</h1>
+
+    <div class="container bg-light p-3 rounded">
+        <div class="row align-items-start m-5 ">
+          <div class="col">
+            Buy
+          </div>
+          <div class="col">
+            MMK- <input type="number" id="bm" value="3080" min="1000" onchange="convertCurrencyBm2u(this.value)">
+          </div>
+          <div class="col">
+            USD- <input type="number" id="bu" value="1" min="0" onchange="convertCurrencyBu2m(this.value)">
+          </div>
+        </div>
+        <div class="row align-items-center m-5">
+            <div class="col">
+                Sell
+              </div>
+              <div class="col">
+                MMK- <input type="number" id="sm" value="3100" min="1000" onchange="convertCurrencySm2u(this.value)">
+              </div>
+              <div class="col">
+                USD- <input type="number" id="su" value="1" min="0" onchange="convertCurrencySu2m(this.value)">
+              </div>
+          </div>
+          <div class="row align-items-end m-5">
+            <div class="col">
+                Reference <a href="https://www.kbzbank.com/en/?gad_source=1&gclid=Cj0KCQjw8pKxBhD_ARIsAPrG45l1rtMigUUkkXYU7riFOmJ9x8ENTid5y8EumhWYq_hpdncXaj7ioysaAo8zEALw_wcB" target="_blank" rel="noopener noreferrer">KBZ banking info</a>
+              </div>
+              <div class="col">
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+              <div class="col">
+                <a href=""></a>              
+            </div>
+          </div>
+        </div>
+    
+</body>
+</html>
